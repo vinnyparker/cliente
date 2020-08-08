@@ -1,5 +1,3 @@
-# cliente
-
 # Cliente #
 
 ## Sistema de Cadastro de Cliente. Um estudo Spring Boot ##
