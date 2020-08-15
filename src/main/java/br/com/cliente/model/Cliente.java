@@ -24,7 +24,7 @@ public class Cliente extends AbstractModel<Long> {
     @Column(name = "telefone", length = 13)
     private int telefone;
 
-    @Column()
+    @Column(name="datanascimento")
     private Date dataNascimento;
 
     public String getNome() {

@@ -19,12 +19,11 @@ public abstract class AbstractModel<Long extends Serializable> implements Serial
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "versao", length = 5)
+    @Column(name = "versao", length = 5, columnDefinition = "varchar(5)  not null default 'v1'")
     private String versao;
 
-    @Column(name = "datacriacao")
+    @Column(name = "datacriacao", columnDefinition = "date not null default CURRENT_DATE")
     private Date dataCriacao;
-
 
     @Override
     public int hashCode() {
